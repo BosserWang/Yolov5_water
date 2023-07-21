@@ -1,0 +1,13 @@
+pyqt5
+matplotlib
+scikit-learn
+timm
+albumentations
+pillow==8.4.0
+opencv-python
+pandas
+tqdm
+torchstat
+dominate>=2.4.0
+visdom>=0.1.8.8
+wandb

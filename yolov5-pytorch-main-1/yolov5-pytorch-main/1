@@ -1,0 +1,917 @@
+/home/dell/anaconda3/envs/pytorch1.5/bin/python /home/dell/桌面/secode-work-gh/back/yolov5-pytorch-main/train.py
+initialize network with normal type
+Load weights /home/dell/桌面/secode-work-gh/back/yolov5-pytorch-main/model_data/yolov5_s.pth.
+
+Successful Load Key: ['backbone.stem.conv.conv.weight', 'backbone.stem.conv.bn.weight', 'backbone.stem.conv.bn.bias', 'backbone.stem.conv.bn.running_mean', 'backbone.stem.conv.bn.running_var', 'backbone.stem.conv.bn.num_batches_tracked', 'backbone.dark2.0.conv.weight', 'backbone.dark2.0.bn.weight', 'backbone.dark2.0.bn.bias', 'backbone.dark2.0.bn.running_mean', 'backbone.dark2.0.bn.running_var', 'backbone.dark2.0.bn.num_batches_tracked', 'backbone.dark2.1.cv1.conv.weight', 'backbone.dark2.1.cv1.bn.weight', 'backbone ……
+Successful Load Key Num: 354
+
+Fail To Load Key: ['yolo_head_P3.weight', 'yolo_head_P3.bias', 'yolo_head_P4.weight', 'yolo_head_P4.bias', 'yolo_head_P5.weight', 'yolo_head_P5.bias'] ……
+Fail To Load Key num: 6
+
+温馨提示，head部分没有载入是正常现象，Backbone部分没有载入是错误的。
+Configurations:
+----------------------------------------------------------------------
+|                     keys |                                   values|
+----------------------------------------------------------------------
+|             classes_path |               model_data/voc_classes.txt|
+|             anchors_path |              model_data/yolo_anchors.txt|
+|             anchors_mask |        [[6, 7, 8], [3, 4, 5], [0, 1, 2]]|
+|               model_path | /home/dell/桌面/secode-work-gh/back/yolov5-pytorch-main/model_data/yolov5_s.pth|
+|              input_shape |                               [640, 640]|
+|               Init_Epoch |                                        0|
+|             Freeze_Epoch |                                       50|
+|           UnFreeze_Epoch |                                      100|
+|        Freeze_batch_size |                                       16|
+|      Unfreeze_batch_size |                                       16|
+|             Freeze_Train |                                     True|
+|                  Init_lr |                                     0.01|
+|                   Min_lr |                                   0.0001|
+|           optimizer_type |                                     adam|
+|                 momentum |                                    0.937|
+|            lr_decay_type |                                      cos|
+|              save_period |                                       10|
+|                 save_dir |                                     logs|
+|              num_workers |                                        4|
+|                num_train |                                    10429|
+|                  num_val |                                     1159|
+----------------------------------------------------------------------
+Start Train
+Epoch 1/100: 100%|██████████| 651/651 [02:38<00:00,  4.10it/s, loss=0.82, lr=0.0001]
+Finish Train
+Start Validation
+Epoch 1/100: 100%|██████████| 72/72 [00:09<00:00,  7.47it/s, val_loss=0.19]
+Finish Validation
+Epoch:1/100
+Total Loss: 0.820 || Val Loss: 0.190
+Save best model to best_epoch_weights.pth
+Epoch 2/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 2/100: 100%|██████████| 651/651 [02:51<00:00,  3.80it/s, loss=0.153, lr=0.0002]
+Epoch 2/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 2/100: 100%|██████████| 72/72 [00:09<00:00,  7.41it/s, val_loss=0.0982]
+Finish Validation
+Epoch:2/100
+Total Loss: 0.153 || Val Loss: 0.098
+Save best model to best_epoch_weights.pth
+Start Train
+Epoch 3/100: 100%|██████████| 651/651 [02:45<00:00,  3.93it/s, loss=0.123, lr=0.0005]
+Epoch 3/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 3/100: 100%|██████████| 72/72 [00:09<00:00,  7.40it/s, val_loss=0.0874]
+Finish Validation
+Epoch:3/100
+Total Loss: 0.123 || Val Loss: 0.087
+Save best model to best_epoch_weights.pth
+Start Train
+Epoch 4/100: 100%|██████████| 651/651 [02:40<00:00,  4.05it/s, loss=0.118, lr=0.001]
+Finish Train
+Start Validation
+Epoch 4/100: 100%|██████████| 72/72 [00:10<00:00,  6.94it/s, val_loss=0.0918]
+Finish Validation
+Epoch:4/100
+Total Loss: 0.118 || Val Loss: 0.092
+Epoch 5/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 5/100: 100%|██████████| 651/651 [02:43<00:00,  3.97it/s, loss=0.116, lr=0.001]
+Finish Train
+Start Validation
+Epoch 5/100: 100%|██████████| 72/72 [00:10<00:00,  7.14it/s, val_loss=0.0834]
+Finish Validation
+Epoch:5/100
+Total Loss: 0.116 || Val Loss: 0.083
+Save best model to best_epoch_weights.pth
+Epoch 6/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 6/100: 100%|██████████| 651/651 [02:45<00:00,  3.92it/s, loss=0.116, lr=0.000999]
+Finish Train
+Start Validation
+Epoch 6/100: 100%|██████████| 72/72 [00:09<00:00,  7.26it/s, val_loss=0.0813]
+Finish Validation
+Epoch:6/100
+Total Loss: 0.116 || Val Loss: 0.081
+Save best model to best_epoch_weights.pth
+Epoch 7/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 7/100: 100%|██████████| 651/651 [02:45<00:00,  3.94it/s, loss=0.113, lr=0.000997]
+Finish Train
+Start Validation
+Epoch 7/100: 100%|██████████| 72/72 [00:09<00:00,  7.44it/s, val_loss=0.0816]
+Finish Validation
+Epoch:7/100
+Total Loss: 0.113 || Val Loss: 0.082
+Epoch 8/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 8/100: 100%|██████████| 651/651 [02:38<00:00,  4.11it/s, loss=0.112, lr=0.000995]
+Epoch 8/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 8/100: 100%|██████████| 72/72 [00:10<00:00,  7.19it/s, val_loss=0.0795]
+Finish Validation
+Epoch:8/100
+Total Loss: 0.112 || Val Loss: 0.080
+Save best model to best_epoch_weights.pth
+Start Train
+Epoch 9/100: 100%|██████████| 651/651 [02:43<00:00,  3.98it/s, loss=0.112, lr=0.000993]
+Finish Train
+Start Validation
+Epoch 9/100: 100%|██████████| 72/72 [00:10<00:00,  7.05it/s, val_loss=0.0773]
+Finish Validation
+Epoch:9/100
+Total Loss: 0.112 || Val Loss: 0.077
+Save best model to best_epoch_weights.pth
+Start Train
+Epoch 10/100: 100%|██████████| 651/651 [02:43<00:00,  3.97it/s, loss=0.111, lr=0.00099]
+Epoch 10/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 10/100: 100%|██████████| 72/72 [00:09<00:00,  7.38it/s, val_loss=0.0774]
+Finish Validation
+Get map.
+100%|██████████| 1159/1159 [01:00<00:00, 19.27it/s]
+Calculate Map.
+53.76% = face AP 	||	score_threhold=0.5 : F1=0.55 ; Recall=38.52% ; Precision=95.07%
+mAP = 53.76%
+Get map done.
+Epoch:10/100
+Total Loss: 0.111 || Val Loss: 0.077
+Epoch 11/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 11/100: 100%|██████████| 651/651 [02:47<00:00,  3.90it/s, loss=0.113, lr=0.000986]
+Epoch 11/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 11/100: 100%|██████████| 72/72 [00:10<00:00,  7.17it/s, val_loss=0.0763]
+Finish Validation
+Epoch:11/100
+Total Loss: 0.113 || Val Loss: 0.076
+Save best model to best_epoch_weights.pth
+Start Train
+Epoch 12/100: 100%|██████████| 651/651 [02:43<00:00,  3.99it/s, loss=0.11, lr=0.000982]
+Epoch 12/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 12/100: 100%|██████████| 72/72 [00:09<00:00,  7.20it/s, val_loss=0.0763]
+Finish Validation
+Epoch:12/100
+Total Loss: 0.110 || Val Loss: 0.076
+Save best model to best_epoch_weights.pth
+Epoch 13/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 13/100: 100%|██████████| 651/651 [02:38<00:00,  4.11it/s, loss=0.111, lr=0.000977]
+Epoch 13/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 13/100: 100%|██████████| 72/72 [00:09<00:00,  7.22it/s, val_loss=0.0753]
+Finish Validation
+Epoch:13/100
+Total Loss: 0.111 || Val Loss: 0.075
+Save best model to best_epoch_weights.pth
+Epoch 14/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 14/100: 100%|██████████| 651/651 [02:45<00:00,  3.93it/s, loss=0.11, lr=0.000971]
+Epoch 14/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 14/100: 100%|██████████| 72/72 [00:10<00:00,  7.07it/s, val_loss=0.0743]
+Finish Validation
+Epoch:14/100
+Total Loss: 0.110 || Val Loss: 0.074
+Save best model to best_epoch_weights.pth
+Start Train
+Epoch 15/100: 100%|██████████| 651/651 [02:43<00:00,  3.97it/s, loss=0.111, lr=0.000965]
+Finish Train
+Start Validation
+Epoch 15/100: 100%|██████████| 72/72 [00:10<00:00,  7.03it/s, val_loss=0.0746]
+Finish Validation
+Epoch:15/100
+Total Loss: 0.111 || Val Loss: 0.075
+Epoch 16/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 16/100: 100%|██████████| 651/651 [02:38<00:00,  4.10it/s, loss=0.11, lr=0.000959]
+Finish Train
+Start Validation
+Epoch 16/100: 100%|██████████| 72/72 [00:10<00:00,  7.05it/s, val_loss=0.0743]
+Finish Validation
+Epoch:16/100
+Total Loss: 0.110 || Val Loss: 0.074
+Save best model to best_epoch_weights.pth
+Epoch 17/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 17/100: 100%|██████████| 651/651 [02:45<00:00,  3.93it/s, loss=0.108, lr=0.000952]
+Finish Train
+Start Validation
+Epoch 17/100: 100%|██████████| 72/72 [00:09<00:00,  7.30it/s, val_loss=0.074]
+Finish Validation
+Epoch:17/100
+Total Loss: 0.108 || Val Loss: 0.074
+Save best model to best_epoch_weights.pth
+Start Train
+Epoch 18/100: 100%|██████████| 651/651 [02:43<00:00,  3.98it/s, loss=0.11, lr=0.000945]
+Epoch 18/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 18/100: 100%|██████████| 72/72 [00:10<00:00,  7.10it/s, val_loss=0.074]
+Finish Validation
+Epoch:18/100
+Total Loss: 0.110 || Val Loss: 0.074
+Epoch 19/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 19/100: 100%|██████████| 651/651 [02:45<00:00,  3.93it/s, loss=0.11, lr=0.000936]
+Finish Train
+Start Validation
+Epoch 19/100: 100%|██████████| 72/72 [00:09<00:00,  7.23it/s, val_loss=0.0737]
+Finish Validation
+Epoch:19/100
+Total Loss: 0.110 || Val Loss: 0.074
+Save best model to best_epoch_weights.pth
+Epoch 20/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 20/100: 100%|██████████| 651/651 [02:38<00:00,  4.12it/s, loss=0.108, lr=0.000928]
+Epoch 20/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 20/100: 100%|██████████| 72/72 [00:10<00:00,  7.01it/s, val_loss=0.0732]
+Finish Validation
+  0%|          | 0/1159 [00:00<?, ?it/s]Get map.
+100%|██████████| 1159/1159 [00:59<00:00, 19.57it/s]
+Calculate Map.
+55.20% = face AP 	||	score_threhold=0.5 : F1=0.58 ; Recall=41.36% ; Precision=94.72%
+mAP = 55.20%
+Get map done.
+Epoch:20/100
+Total Loss: 0.108 || Val Loss: 0.073
+Save best model to best_epoch_weights.pth
+Start Train
+Epoch 21/100: 100%|██████████| 651/651 [02:36<00:00,  4.16it/s, loss=0.109, lr=0.000919]
+Finish Train
+Start Validation
+Epoch 21/100: 100%|██████████| 72/72 [00:09<00:00,  7.21it/s, val_loss=0.0732]
+Finish Validation
+Epoch:21/100
+Total Loss: 0.109 || Val Loss: 0.073
+Save best model to best_epoch_weights.pth
+Start Train
+Epoch 22/100: 100%|██████████| 651/651 [02:43<00:00,  3.98it/s, loss=0.11, lr=0.000909]
+Finish Train
+Start Validation
+Epoch 22/100: 100%|██████████| 72/72 [00:10<00:00,  7.04it/s, val_loss=0.0733]
+Finish Validation
+Epoch:22/100
+Total Loss: 0.110 || Val Loss: 0.073
+Epoch 23/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 23/100: 100%|██████████| 651/651 [02:44<00:00,  3.95it/s, loss=0.109, lr=0.000899]
+Epoch 23/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 23/100: 100%|██████████| 72/72 [00:09<00:00,  7.26it/s, val_loss=0.0731]
+Finish Validation
+Epoch:23/100
+Total Loss: 0.109 || Val Loss: 0.073
+Save best model to best_epoch_weights.pth
+Start Train
+Epoch 24/100: 100%|██████████| 651/651 [02:37<00:00,  4.14it/s, loss=0.109, lr=0.000889]
+Epoch 24/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 24/100: 100%|██████████| 72/72 [00:10<00:00,  7.06it/s, val_loss=0.0731]
+Finish Validation
+Epoch:24/100
+Total Loss: 0.109 || Val Loss: 0.073
+Save best model to best_epoch_weights.pth
+Start Train
+Epoch 25/100: 100%|██████████| 651/651 [02:41<00:00,  4.04it/s, loss=0.109, lr=0.000878]
+Epoch 25/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 25/100: 100%|██████████| 72/72 [00:10<00:00,  7.19it/s, val_loss=0.0728]
+Finish Validation
+Epoch:25/100
+Total Loss: 0.109 || Val Loss: 0.073
+Save best model to best_epoch_weights.pth
+Start Train
+Epoch 26/100: 100%|██████████| 651/651 [02:44<00:00,  3.96it/s, loss=0.108, lr=0.000867]
+Finish Train
+Start Validation
+Epoch 26/100: 100%|██████████| 72/72 [00:09<00:00,  7.25it/s, val_loss=0.0734]
+Finish Validation
+Epoch:26/100
+Total Loss: 0.108 || Val Loss: 0.073
+Start Train
+Epoch 27/100: 100%|██████████| 651/651 [02:42<00:00,  4.01it/s, loss=0.11, lr=0.000855]
+Finish Train
+Start Validation
+Epoch 27/100: 100%|██████████| 72/72 [00:10<00:00,  7.07it/s, val_loss=0.0729]
+Finish Validation
+Epoch:27/100
+Total Loss: 0.110 || Val Loss: 0.073
+Start Train
+Epoch 28/100: 100%|██████████| 651/651 [02:36<00:00,  4.17it/s, loss=0.107, lr=0.000843]
+Finish Train
+Start Validation
+Epoch 28/100: 100%|██████████| 72/72 [00:09<00:00,  7.25it/s, val_loss=0.0733]
+Finish Validation
+Epoch:28/100
+Total Loss: 0.107 || Val Loss: 0.073
+Epoch 29/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 29/100: 100%|██████████| 651/651 [02:50<00:00,  3.83it/s, loss=0.108, lr=0.00083]
+Epoch 29/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 29/100: 100%|██████████| 72/72 [00:09<00:00,  7.25it/s, val_loss=0.0729]
+Finish Validation
+Epoch:29/100
+Total Loss: 0.108 || Val Loss: 0.073
+Start Train
+Epoch 30/100: 100%|██████████| 651/651 [02:43<00:00,  3.98it/s, loss=0.108, lr=0.000817]
+Finish Train
+Start Validation
+Epoch 30/100: 100%|██████████| 72/72 [00:09<00:00,  7.32it/s, val_loss=0.0733]
+Finish Validation
+Get map.
+100%|██████████| 1159/1159 [01:00<00:00, 19.22it/s]
+Calculate Map.
+55.29% = face AP 	||	score_threhold=0.5 : F1=0.57 ; Recall=41.11% ; Precision=94.61%
+mAP = 55.29%
+Get map done.
+Epoch:30/100
+Total Loss: 0.108 || Val Loss: 0.073
+Epoch 31/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 31/100: 100%|██████████| 651/651 [02:44<00:00,  3.96it/s, loss=0.108, lr=0.000804]
+Finish Train
+Start Validation
+Epoch 31/100: 100%|██████████| 72/72 [00:09<00:00,  7.36it/s, val_loss=0.0729]
+Finish Validation
+Epoch:31/100
+Total Loss: 0.108 || Val Loss: 0.073
+Start Train
+Epoch 32/100: 100%|██████████| 651/651 [02:36<00:00,  4.17it/s, loss=0.108, lr=0.00079]
+Epoch 32/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 32/100: 100%|██████████| 72/72 [00:09<00:00,  7.25it/s, val_loss=0.0733]
+Finish Validation
+Epoch:32/100
+Total Loss: 0.108 || Val Loss: 0.073
+Start Train
+Epoch 33/100: 100%|██████████| 651/651 [02:43<00:00,  3.99it/s, loss=0.108, lr=0.000776]
+Epoch 33/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 33/100: 100%|██████████| 72/72 [00:09<00:00,  7.22it/s, val_loss=0.073]
+Finish Validation
+Epoch:33/100
+Total Loss: 0.108 || Val Loss: 0.073
+Start Train
+Epoch 34/100: 100%|██████████| 651/651 [02:42<00:00,  4.01it/s, loss=0.108, lr=0.000762]
+Finish Train
+Start Validation
+Epoch 34/100: 100%|██████████| 72/72 [00:09<00:00,  7.26it/s, val_loss=0.0735]
+Finish Validation
+Epoch:34/100
+Total Loss: 0.108 || Val Loss: 0.073
+Start Train
+Epoch 35/100: 100%|██████████| 651/651 [02:36<00:00,  4.15it/s, loss=0.107, lr=0.000748]
+Finish Train
+Start Validation
+Epoch 35/100: 100%|██████████| 72/72 [00:13<00:00,  5.15it/s, val_loss=0.0731]
+Finish Validation
+Epoch:35/100
+Total Loss: 0.107 || Val Loss: 0.073
+Start Train
+Epoch 36/100: 100%|██████████| 651/651 [02:39<00:00,  4.09it/s, loss=0.106, lr=0.000733]
+Epoch 36/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 36/100: 100%|██████████| 72/72 [00:10<00:00,  7.12it/s, val_loss=0.0728]
+Finish Validation
+Epoch:36/100
+Total Loss: 0.106 || Val Loss: 0.073
+Start Train
+Epoch 37/100: 100%|██████████| 651/651 [02:43<00:00,  3.98it/s, loss=0.107, lr=0.000718]
+Finish Train
+Start Validation
+Epoch 37/100: 100%|██████████| 72/72 [00:10<00:00,  7.14it/s, val_loss=0.0732]
+Finish Validation
+Epoch:37/100
+Total Loss: 0.107 || Val Loss: 0.073
+Start Train
+Epoch 38/100: 100%|██████████| 651/651 [02:44<00:00,  3.95it/s, loss=0.107, lr=0.000702]
+Epoch 38/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 38/100: 100%|██████████| 72/72 [00:09<00:00,  7.21it/s, val_loss=0.073]
+Finish Validation
+Epoch:38/100
+Total Loss: 0.107 || Val Loss: 0.073
+Start Train
+Epoch 39/100: 100%|██████████| 651/651 [02:39<00:00,  4.09it/s, loss=0.106, lr=0.000687]
+Epoch 39/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 39/100: 100%|██████████| 72/72 [00:10<00:00,  7.07it/s, val_loss=0.0734]
+Finish Validation
+Epoch:39/100
+Total Loss: 0.106 || Val Loss: 0.073
+Start Train
+Epoch 40/100: 100%|██████████| 651/651 [02:41<00:00,  4.02it/s, loss=0.107, lr=0.000671]
+Finish Train
+Start Validation
+Epoch 40/100: 100%|██████████| 72/72 [00:09<00:00,  7.23it/s, val_loss=0.0726]
+Finish Validation
+Get map.
+100%|██████████| 1159/1159 [01:00<00:00, 19.13it/s]
+Calculate Map.
+55.12% = face AP 	||	score_threhold=0.5 : F1=0.57 ; Recall=41.02% ; Precision=94.95%
+mAP = 55.12%
+Get map done.
+Epoch:40/100
+Total Loss: 0.107 || Val Loss: 0.073
+Save best model to best_epoch_weights.pth
+Epoch 41/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 41/100: 100%|██████████| 651/651 [02:41<00:00,  4.02it/s, loss=0.105, lr=0.000655]
+Epoch 41/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 41/100: 100%|██████████| 72/72 [00:09<00:00,  7.28it/s, val_loss=0.0734]
+Finish Validation
+Epoch:41/100
+Total Loss: 0.105 || Val Loss: 0.073
+Epoch 42/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 42/100: 100%|██████████| 651/651 [02:42<00:00,  4.00it/s, loss=0.106, lr=0.000639]
+Finish Train
+Start Validation
+Epoch 42/100: 100%|██████████| 72/72 [00:09<00:00,  7.42it/s, val_loss=0.0731]
+Finish Validation
+Epoch:42/100
+Total Loss: 0.106 || Val Loss: 0.073
+Start Train
+Epoch 43/100: 100%|██████████| 651/651 [02:43<00:00,  3.99it/s, loss=0.106, lr=0.000622]
+Finish Train
+Start Validation
+Epoch 43/100: 100%|██████████| 72/72 [00:09<00:00,  7.26it/s, val_loss=0.0727]
+Finish Validation
+Epoch:43/100
+Total Loss: 0.106 || Val Loss: 0.073
+Epoch 44/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 44/100: 100%|██████████| 651/651 [02:36<00:00,  4.15it/s, loss=0.107, lr=0.000606]
+Epoch 44/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 44/100: 100%|██████████| 72/72 [00:10<00:00,  6.89it/s, val_loss=0.0732]
+Finish Validation
+Epoch:44/100
+Total Loss: 0.107 || Val Loss: 0.073
+Epoch 45/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 45/100: 100%|██████████| 651/651 [02:41<00:00,  4.04it/s, loss=0.107, lr=0.000589]
+Epoch 45/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 45/100: 100%|██████████| 72/72 [00:09<00:00,  7.35it/s, val_loss=0.0731]
+Finish Validation
+Epoch:45/100
+Total Loss: 0.107 || Val Loss: 0.073
+Start Train
+Epoch 46/100: 100%|██████████| 651/651 [02:43<00:00,  3.98it/s, loss=0.107, lr=0.000572]
+Finish Train
+Start Validation
+Epoch 46/100: 100%|██████████| 72/72 [00:10<00:00,  7.09it/s, val_loss=0.0731]
+Finish Validation
+Epoch:46/100
+Total Loss: 0.107 || Val Loss: 0.073
+Epoch 47/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 47/100: 100%|██████████| 651/651 [02:39<00:00,  4.08it/s, loss=0.106, lr=0.000556]
+Epoch 47/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 47/100: 100%|██████████| 72/72 [00:10<00:00,  7.06it/s, val_loss=0.0729]
+Finish Validation
+Epoch:47/100
+Total Loss: 0.106 || Val Loss: 0.073
+Start Train
+Epoch 48/100: 100%|██████████| 651/651 [02:42<00:00,  4.02it/s, loss=0.106, lr=0.000539]
+Finish Train
+Start Validation
+Epoch 48/100: 100%|██████████| 72/72 [00:09<00:00,  7.22it/s, val_loss=0.0729]
+Finish Validation
+Epoch:48/100
+Total Loss: 0.106 || Val Loss: 0.073
+Epoch 49/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 49/100: 100%|██████████| 651/651 [02:42<00:00,  4.01it/s, loss=0.106, lr=0.000522]
+Finish Train
+Start Validation
+Epoch 49/100: 100%|██████████| 72/72 [00:09<00:00,  7.23it/s, val_loss=0.0734]
+Finish Validation
+Epoch:49/100
+Total Loss: 0.106 || Val Loss: 0.073
+Epoch 50/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 50/100: 100%|██████████| 651/651 [02:40<00:00,  4.06it/s, loss=0.105, lr=0.000505]
+Epoch 50/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 50/100: 100%|██████████| 72/72 [00:13<00:00,  5.48it/s, val_loss=0.073]
+Finish Validation
+Get map.
+100%|██████████| 1159/1159 [00:59<00:00, 19.34it/s]
+Calculate Map.
+55.16% = face AP 	||	score_threhold=0.5 : F1=0.57 ; Recall=40.72% ; Precision=95.04%
+mAP = 55.16%
+Get map done.
+Epoch:50/100
+Total Loss: 0.105 || Val Loss: 0.073
+Epoch 51/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 51/100: 100%|██████████| 651/651 [03:50<00:00,  2.82it/s, loss=0.111, lr=0.000488]
+Finish Train
+Start Validation
+Epoch 51/100: 100%|██████████| 72/72 [00:10<00:00,  7.16it/s, val_loss=0.0728]
+Finish Validation
+Epoch:51/100
+Total Loss: 0.111 || Val Loss: 0.073
+Epoch 52/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 52/100: 100%|██████████| 651/651 [03:47<00:00,  2.86it/s, loss=0.109, lr=0.000471]
+Finish Train
+Start Validation
+Epoch 52/100: 100%|██████████| 72/72 [00:13<00:00,  5.18it/s, val_loss=0.0738]
+Finish Validation
+Epoch:52/100
+Total Loss: 0.109 || Val Loss: 0.074
+Start Train
+Epoch 53/100: 100%|██████████| 651/651 [03:48<00:00,  2.85it/s, loss=0.108, lr=0.000454]
+Finish Train
+Start Validation
+Epoch 53/100: 100%|██████████| 72/72 [00:10<00:00,  7.01it/s, val_loss=0.0745]
+Finish Validation
+Epoch:53/100
+Total Loss: 0.108 || Val Loss: 0.075
+Start Train
+Epoch 54/100: 100%|██████████| 651/651 [03:50<00:00,  2.83it/s, loss=0.108, lr=0.000438]
+Epoch 54/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 54/100: 100%|██████████| 72/72 [00:10<00:00,  6.96it/s, val_loss=0.0763]
+Finish Validation
+Epoch:54/100
+Total Loss: 0.108 || Val Loss: 0.076
+Epoch 55/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 55/100: 100%|██████████| 651/651 [03:49<00:00,  2.84it/s, loss=0.108, lr=0.000421]
+Finish Train
+Start Validation
+Epoch 55/100: 100%|██████████| 72/72 [00:10<00:00,  7.02it/s, val_loss=0.0782]
+Finish Validation
+Epoch:55/100
+Total Loss: 0.108 || Val Loss: 0.078
+Start Train
+Epoch 56/100: 100%|██████████| 651/651 [03:50<00:00,  2.83it/s, loss=0.108, lr=0.000404]
+Epoch 56/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 56/100: 100%|██████████| 72/72 [00:10<00:00,  7.02it/s, val_loss=0.0808]
+Finish Validation
+Epoch:56/100
+Total Loss: 0.108 || Val Loss: 0.081
+Start Train
+Epoch 57/100: 100%|██████████| 651/651 [03:52<00:00,  2.80it/s, loss=0.107, lr=0.000388]
+Epoch 57/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 57/100: 100%|██████████| 72/72 [00:10<00:00,  7.03it/s, val_loss=0.0847]
+Finish Validation
+Epoch:57/100
+Total Loss: 0.107 || Val Loss: 0.085
+Epoch 58/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 58/100: 100%|██████████| 651/651 [03:48<00:00,  2.85it/s, loss=0.104, lr=0.000371]
+Finish Train
+Start Validation
+Epoch 58/100: 100%|██████████| 72/72 [00:10<00:00,  7.20it/s, val_loss=0.09]
+Finish Validation
+Epoch:58/100
+Total Loss: 0.104 || Val Loss: 0.090
+Start Train
+Epoch 59/100: 100%|██████████| 651/651 [03:51<00:00,  2.81it/s, loss=0.105, lr=0.000355]
+Finish Train
+Start Validation
+Epoch 59/100: 100%|██████████| 72/72 [00:10<00:00,  7.15it/s, val_loss=0.0965]
+Finish Validation
+Epoch:59/100
+Total Loss: 0.105 || Val Loss: 0.096
+Start Train
+Epoch 60/100: 100%|██████████| 651/651 [03:50<00:00,  2.82it/s, loss=0.104, lr=0.000339]
+Finish Train
+Start Validation
+Epoch 60/100: 100%|██████████| 72/72 [00:10<00:00,  7.03it/s, val_loss=0.104]
+Finish Validation
+  0%|          | 0/1159 [00:00<?, ?it/s]Get map.
+100%|██████████| 1159/1159 [00:58<00:00, 19.88it/s]
+Calculate Map.
+34.37% = face AP 	||	score_threhold=0.5 : F1=0.23 ; Recall=13.28% ; Precision=99.88%
+mAP = 34.37%
+Get map done.
+Epoch:60/100
+Total Loss: 0.104 || Val Loss: 0.104
+Epoch 61/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 61/100: 100%|██████████| 651/651 [03:50<00:00,  2.83it/s, loss=0.104, lr=0.000323]
+Finish Train
+Start Validation
+Epoch 61/100: 100%|██████████| 72/72 [00:10<00:00,  7.02it/s, val_loss=0.113]
+Finish Validation
+Epoch:61/100
+Total Loss: 0.104 || Val Loss: 0.113
+Epoch 62/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 62/100: 100%|██████████| 651/651 [03:50<00:00,  2.82it/s, loss=0.103, lr=0.000308]
+Finish Train
+Start Validation
+Epoch 62/100: 100%|██████████| 72/72 [00:09<00:00,  7.25it/s, val_loss=0.122]
+Finish Validation
+Epoch:62/100
+Total Loss: 0.103 || Val Loss: 0.122
+Epoch 63/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 63/100: 100%|██████████| 651/651 [03:50<00:00,  2.82it/s, loss=0.102, lr=0.000292]
+Finish Train
+Start Validation
+Epoch 63/100: 100%|██████████| 72/72 [00:10<00:00,  6.90it/s, val_loss=0.13]
+Finish Validation
+Epoch:63/100
+Total Loss: 0.102 || Val Loss: 0.130
+Epoch 64/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 64/100: 100%|██████████| 651/651 [03:50<00:00,  2.82it/s, loss=0.102, lr=0.000277]
+Epoch 64/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 64/100: 100%|██████████| 72/72 [00:10<00:00,  6.99it/s, val_loss=0.138]
+Finish Validation
+Epoch:64/100
+Total Loss: 0.102 || Val Loss: 0.138
+Start Train
+Epoch 65/100: 100%|██████████| 651/651 [03:51<00:00,  2.81it/s, loss=0.102, lr=0.000262]
+Epoch 65/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 65/100: 100%|██████████| 72/72 [00:10<00:00,  6.82it/s, val_loss=0.145]
+Finish Validation
+Epoch:65/100
+Total Loss: 0.102 || Val Loss: 0.145
+Start Train
+Epoch 66/100: 100%|██████████| 651/651 [03:47<00:00,  2.86it/s, loss=0.102, lr=0.000248]
+Finish Train
+Start Validation
+Epoch 66/100: 100%|██████████| 72/72 [00:10<00:00,  6.90it/s, val_loss=0.152]
+Finish Validation
+Epoch:66/100
+Total Loss: 0.102 || Val Loss: 0.152
+Epoch 67/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 67/100: 100%|██████████| 651/651 [03:50<00:00,  2.82it/s, loss=0.101, lr=0.000234]
+Epoch 67/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 67/100: 100%|██████████| 72/72 [00:10<00:00,  6.89it/s, val_loss=0.158]
+Finish Validation
+Epoch:67/100
+Total Loss: 0.101 || Val Loss: 0.158
+Start Train
+Epoch 68/100: 100%|██████████| 651/651 [03:51<00:00,  2.81it/s, loss=0.101, lr=0.00022]
+Finish Train
+Start Validation
+Epoch 68/100: 100%|██████████| 72/72 [00:10<00:00,  6.94it/s, val_loss=0.163]
+Finish Validation
+Epoch:68/100
+Total Loss: 0.101 || Val Loss: 0.163
+Start Train
+Epoch 69/100: 100%|██████████| 651/651 [03:50<00:00,  2.83it/s, loss=0.099, lr=0.000206]
+Epoch 69/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 69/100: 100%|██████████| 72/72 [00:10<00:00,  7.08it/s, val_loss=0.166]
+Finish Validation
+Epoch:69/100
+Total Loss: 0.099 || Val Loss: 0.166
+Start Train
+Epoch 70/100: 100%|██████████| 651/651 [03:52<00:00,  2.80it/s, loss=0.0988, lr=0.000193]
+Epoch 70/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 70/100: 100%|██████████| 72/72 [00:10<00:00,  7.07it/s, val_loss=0.17]
+Finish Validation
+Get map.
+100%|██████████| 1159/1159 [00:55<00:00, 20.86it/s]
+Calculate Map.
+0.61% = face AP 	||	score_threhold=0.5 : F1=0.00 ; Recall=0.01% ; Precision=100.00%
+mAP = 0.61%
+Get map done.
+Epoch:70/100
+Total Loss: 0.099 || Val Loss: 0.170
+Start Train
+Epoch 71/100: 100%|██████████| 651/651 [03:53<00:00,  2.79it/s, loss=0.0747, lr=0.00018]
+Finish Train
+Start Validation
+Epoch 71/100: 100%|██████████| 72/72 [00:10<00:00,  7.02it/s, val_loss=0.173]
+Finish Validation
+Epoch:71/100
+Total Loss: 0.075 || Val Loss: 0.173
+Start Train
+Epoch 72/100: 100%|██████████| 651/651 [03:52<00:00,  2.80it/s, loss=0.0739, lr=0.000167]
+Epoch 72/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 72/100: 100%|██████████| 72/72 [00:10<00:00,  6.92it/s, val_loss=0.176]
+Finish Validation
+Epoch:72/100
+Total Loss: 0.074 || Val Loss: 0.176
+Start Train
+Epoch 73/100: 100%|██████████| 651/651 [03:53<00:00,  2.79it/s, loss=0.0736, lr=0.000155]
+Finish Train
+Start Validation
+Epoch 73/100: 100%|██████████| 72/72 [00:10<00:00,  7.13it/s, val_loss=0.177]
+Finish Validation
+Epoch:73/100
+Total Loss: 0.074 || Val Loss: 0.177
+Start Train
+Epoch 74/100: 100%|██████████| 651/651 [03:53<00:00,  2.79it/s, loss=0.0727, lr=0.000143]
+Finish Train
+Start Validation
+Epoch 74/100: 100%|██████████| 72/72 [00:11<00:00,  6.29it/s, val_loss=0.179]
+Finish Validation
+Epoch:74/100
+Total Loss: 0.073 || Val Loss: 0.179
+Start Train
+Epoch 75/100: 100%|██████████| 651/651 [03:52<00:00,  2.80it/s, loss=0.0722, lr=0.000132]
+Finish Train
+Start Validation
+Epoch 75/100: 100%|██████████| 72/72 [00:10<00:00,  7.10it/s, val_loss=0.18]
+Finish Validation
+Epoch:75/100
+Total Loss: 0.072 || Val Loss: 0.180
+Epoch 76/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 76/100: 100%|██████████| 651/651 [03:53<00:00,  2.78it/s, loss=0.0713, lr=0.000121]
+Finish Train
+Start Validation
+Epoch 76/100: 100%|██████████| 72/72 [00:10<00:00,  6.99it/s, val_loss=0.182]
+Finish Validation
+Epoch:76/100
+Total Loss: 0.071 || Val Loss: 0.182
+Start Train
+Epoch 77/100: 100%|██████████| 651/651 [03:53<00:00,  2.79it/s, loss=0.0714, lr=0.000111]
+Epoch 77/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 77/100: 100%|██████████| 72/72 [00:10<00:00,  6.99it/s, val_loss=0.183]
+Finish Validation
+Epoch:77/100
+Total Loss: 0.071 || Val Loss: 0.183
+Epoch 78/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 78/100: 100%|██████████| 651/651 [03:46<00:00,  2.88it/s, loss=0.0705, lr=0.000101]
+Finish Train
+Start Validation
+Epoch 78/100: 100%|██████████| 72/72 [00:10<00:00,  7.02it/s, val_loss=0.183]
+Finish Validation
+Epoch:78/100
+Total Loss: 0.070 || Val Loss: 0.183
+Epoch 79/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 79/100: 100%|██████████| 651/651 [03:53<00:00,  2.78it/s, loss=0.0704, lr=9.11e-5]
+Epoch 79/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 79/100: 100%|██████████| 72/72 [00:10<00:00,  6.84it/s, val_loss=0.185]
+Finish Validation
+Epoch:79/100
+Total Loss: 0.070 || Val Loss: 0.185
+Start Train
+Epoch 80/100: 100%|██████████| 651/651 [03:53<00:00,  2.79it/s, loss=0.0698, lr=8.21e-5]
+Finish Train
+Start Validation
+Epoch 80/100: 100%|██████████| 72/72 [00:10<00:00,  7.19it/s, val_loss=0.185]
+Finish Validation
+  0%|          | 0/1159 [00:00<?, ?it/s]Get map.
+100%|██████████| 1159/1159 [00:55<00:00, 21.02it/s]
+Calculate Map.
+未检测到任何目标。
+Get map done.
+Epoch:80/100
+Total Loss: 0.070 || Val Loss: 0.185
+Epoch 81/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 81/100: 100%|██████████| 651/651 [03:52<00:00,  2.80it/s, loss=0.0692, lr=7.35e-5]
+Epoch 81/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 81/100: 100%|██████████| 72/72 [00:09<00:00,  7.20it/s, val_loss=0.186]
+Finish Validation
+Epoch:81/100
+Total Loss: 0.069 || Val Loss: 0.186
+Start Train
+Epoch 82/100: 100%|██████████| 651/651 [03:54<00:00,  2.78it/s, loss=0.069, lr=6.55e-5]
+Epoch 82/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 82/100: 100%|██████████| 72/72 [00:10<00:00,  7.02it/s, val_loss=0.186]
+Finish Validation
+Epoch:82/100
+Total Loss: 0.069 || Val Loss: 0.186
+Epoch 83/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 83/100: 100%|██████████| 651/651 [03:53<00:00,  2.79it/s, loss=0.0679, lr=5.8e-5]
+Finish Train
+Start Validation
+Epoch 83/100: 100%|██████████| 72/72 [00:10<00:00,  6.88it/s, val_loss=0.186]
+Finish Validation
+Epoch:83/100
+Total Loss: 0.068 || Val Loss: 0.186
+Start Train
+Epoch 84/100: 100%|██████████| 651/651 [03:51<00:00,  2.82it/s, loss=0.0683, lr=5.1e-5]
+Finish Train
+Start Validation
+Epoch 84/100: 100%|██████████| 72/72 [00:10<00:00,  7.07it/s, val_loss=0.187]
+Finish Validation
+Epoch:84/100
+Total Loss: 0.068 || Val Loss: 0.187
+Epoch 85/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 85/100: 100%|██████████| 651/651 [03:52<00:00,  2.80it/s, loss=0.0676, lr=4.45e-5]
+Epoch 85/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 85/100: 100%|██████████| 72/72 [00:09<00:00,  7.31it/s, val_loss=0.187]
+Finish Validation
+Epoch:85/100
+Total Loss: 0.068 || Val Loss: 0.187
+Start Train
+Epoch 86/100: 100%|██████████| 651/651 [03:52<00:00,  2.81it/s, loss=0.0673, lr=3.86e-5]
+Epoch 86/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 86/100: 100%|██████████| 72/72 [00:10<00:00,  7.03it/s, val_loss=0.188]
+Finish Validation
+Epoch:86/100
+Total Loss: 0.067 || Val Loss: 0.188
+Start Train
+Epoch 87/100: 100%|██████████| 651/651 [03:53<00:00,  2.79it/s, loss=0.0663, lr=3.32e-5]
+Finish Train
+Start Validation
+Epoch 87/100: 100%|██████████| 72/72 [00:10<00:00,  7.05it/s, val_loss=0.188]
+Finish Validation
+Epoch:87/100
+Total Loss: 0.066 || Val Loss: 0.188
+Epoch 88/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 88/100: 100%|██████████| 651/651 [03:52<00:00,  2.80it/s, loss=0.0667, lr=2.84e-5]
+Epoch 88/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 88/100: 100%|██████████| 72/72 [00:10<00:00,  7.11it/s, val_loss=0.189]
+Finish Validation
+Epoch:88/100
+Total Loss: 0.067 || Val Loss: 0.189
+Epoch 89/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 89/100: 100%|██████████| 651/651 [03:52<00:00,  2.80it/s, loss=0.0657, lr=2.41e-5]
+Finish Train
+Start Validation
+Epoch 89/100: 100%|██████████| 72/72 [00:10<00:00,  7.08it/s, val_loss=0.188]
+Finish Validation
+Epoch:89/100
+Total Loss: 0.066 || Val Loss: 0.188
+Epoch 90/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 90/100: 100%|██████████| 651/651 [03:53<00:00,  2.79it/s, loss=0.0659, lr=2.04e-5]
+Epoch 90/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 90/100: 100%|██████████| 72/72 [00:10<00:00,  7.00it/s, val_loss=0.189]
+Finish Validation
+Get map.
+100%|██████████| 1159/1159 [00:55<00:00, 20.86it/s]
+Calculate Map.
+未检测到任何目标。
+Get map done.
+Epoch:90/100
+Total Loss: 0.066 || Val Loss: 0.189
+Start Train
+Epoch 91/100: 100%|██████████| 651/651 [03:52<00:00,  2.80it/s, loss=0.0657, lr=1.72e-5]
+Epoch 91/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 91/100: 100%|██████████| 72/72 [00:10<00:00,  7.15it/s, val_loss=0.189]
+Finish Validation
+Epoch:91/100
+Total Loss: 0.066 || Val Loss: 0.189
+Epoch 92/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 92/100: 100%|██████████| 651/651 [03:52<00:00,  2.80it/s, loss=0.0652, lr=1.46e-5]
+Epoch 92/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 92/100: 100%|██████████| 72/72 [00:10<00:00,  7.06it/s, val_loss=0.189]
+Finish Validation
+Epoch:92/100
+Total Loss: 0.065 || Val Loss: 0.189
+Start Train
+Epoch 93/100: 100%|██████████| 651/651 [03:50<00:00,  2.82it/s, loss=0.065, lr=1.26e-5]
+Finish Train
+Start Validation
+Epoch 93/100: 100%|██████████| 72/72 [00:10<00:00,  6.95it/s, val_loss=0.189]
+Finish Validation
+Epoch:93/100
+Total Loss: 0.065 || Val Loss: 0.189
+Epoch 94/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 94/100: 100%|██████████| 651/651 [03:52<00:00,  2.79it/s, loss=0.065, lr=1.12e-5]
+Epoch 94/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 94/100: 100%|██████████| 72/72 [00:09<00:00,  7.20it/s, val_loss=0.189]
+Finish Validation
+Epoch:94/100
+Total Loss: 0.065 || Val Loss: 0.189
+Epoch 95/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 95/100: 100%|██████████| 651/651 [03:54<00:00,  2.78it/s, loss=0.065, lr=1.03e-5]
+Epoch 95/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 95/100: 100%|██████████| 72/72 [00:10<00:00,  7.20it/s, val_loss=0.189]
+Finish Validation
+Epoch:95/100
+Total Loss: 0.065 || Val Loss: 0.189
+Start Train
+Epoch 96/100: 100%|██████████| 651/651 [03:55<00:00,  2.77it/s, loss=0.0645, lr=1e-5]
+Finish Train
+Start Validation
+Epoch 96/100: 100%|██████████| 72/72 [00:10<00:00,  6.86it/s, val_loss=0.189]
+Finish Validation
+Epoch:96/100
+Total Loss: 0.065 || Val Loss: 0.189
+Start Train
+Epoch 97/100: 100%|██████████| 651/651 [03:53<00:00,  2.79it/s, loss=0.0647, lr=1e-5]
+Epoch 97/100:   0%|          | 0/72 [00:00<?, ?it/s<class 'dict'>]Finish Train
+Start Validation
+Epoch 97/100: 100%|██████████| 72/72 [00:10<00:00,  7.02it/s, val_loss=0.189]
+Finish Validation
+Epoch:97/100
+Total Loss: 0.065 || Val Loss: 0.189
+Epoch 98/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 98/100: 100%|██████████| 651/651 [03:52<00:00,  2.80it/s, loss=0.0647, lr=1e-5]
+Finish Train
+Start Validation
+Epoch 98/100: 100%|██████████| 72/72 [00:10<00:00,  7.18it/s, val_loss=0.187]
+Finish Validation
+Epoch:98/100
+Total Loss: 0.065 || Val Loss: 0.187
+Epoch 99/100:   0%|          | 0/651 [00:00<?, ?it/s<class 'dict'>]Start Train
+Epoch 99/100: 100%|██████████| 651/651 [03:52<00:00,  2.80it/s, loss=0.065, lr=1e-5]
+Finish Train
+Start Validation
+Epoch 99/100: 100%|██████████| 72/72 [00:09<00:00,  7.24it/s, val_loss=0.186]
+Finish Validation
+Epoch:99/100
+Total Loss: 0.065 || Val Loss: 0.186
+Start Train
+Epoch 100/100: 100%|██████████| 651/651 [03:52<00:00,  2.80it/s, loss=0.0643, lr=1e-5]
+Finish Train
+Start Validation
+Epoch 100/100: 100%|██████████| 72/72 [00:08<00:00,  8.20it/s, val_loss=0.185]
+Finish Validation
+  0%|          | 0/1159 [00:00<?, ?it/s]Get map.
+100%|██████████| 1159/1159 [00:49<00:00, 23.62it/s]
+Calculate Map.
+1.14% = face AP 	||	score_threhold=0.5 : F1=0.00 ; Recall=0.01% ; Precision=100.00%
+mAP = 1.14%
+Get map done.
+Epoch:100/100
+Total Loss: 0.064 || Val Loss: 0.185
+
+Process finished with exit code 0
